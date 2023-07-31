@@ -13,7 +13,7 @@ This scheduler demonstrates how you can incorporate jquery into your script to h
 
 This scheduler can be used to write down and store your daily tasks based on the hour. It follows the current time and will alter its color scheme to display current, past, and future hours from 9am to 5pm. It can also be used to understand the syntax of jquery.
 
-To utilize, open webpage.
+To utilize, open webpage. https://lilpinc.github.io/Work-Day-Scheduler/
 
 ## Credits
 

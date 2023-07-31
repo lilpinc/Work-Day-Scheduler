@@ -15,7 +15,7 @@ $(function () {
 
   saveBtnEl.on('click', function () {
 
-    var calendarInfo = $(this).siblings(".description").val(); /* makes the value the textarea of the hour */
+    var calendarInfo = $(this).siblings('textarea').val(); /* makes the value the textarea of the hour */
     var hourTime = $(this).parent().attr("id"); /* makes the key the id of the hour */
     localStorage.setItem(hourTime, calendarInfo); /* add to storage */
   });
@@ -44,15 +44,25 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
-  $("#9 .description").val(localStorage.getItem("9"));
-  $("#10 .description").val(localStorage.getItem("10"));
-  $("#11 .description").val(localStorage.getItem("11"));
-  $("#12 .description").val(localStorage.getItem("12"));
-  $("#13 .description").val(localStorage.getItem("13"));
-  $("#14 .description").val(localStorage.getItem("14"));
-  $("#15 .description").val(localStorage.getItem("15"));
-  $("#16 .description").val(localStorage.getItem("16"));
-  $("#17 .description").val(localStorage.getItem("17"));
+  let hour9 = $("#9");
+  let hour10 = $("#10");
+  let hour11 = $("#11");
+  let hour12 = $("#12");
+  let hour13 = $("#13");
+  let hour14 = $("#14");
+  let hour15 = $("#15");
+  let hour16 = $("#16");
+  let hour17 = $("#17");
+
+  hour9.children('textarea').val(localStorage.getItem("9"));
+  hour10.children('textarea').val(localStorage.getItem("10"));
+  hour11.children('textarea').val(localStorage.getItem("11"));
+  hour12.children('textarea').val(localStorage.getItem("12"));
+  hour13.children('textarea').val(localStorage.getItem("13"));
+  hour14.children('textarea').val(localStorage.getItem("14"));
+  hour15.children('textarea').val(localStorage.getItem("15"));
+  hour16.children('textarea').val(localStorage.getItem("16"));
+  hour17.children('textarea').val(localStorage.getItem("17"));
   //
   // TODO: Add code to display the current date in the header of the page.
   function displayDate() {

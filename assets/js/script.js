@@ -2,7 +2,7 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
-  var container = $('.container-fluid');
+
   var saveBtnEl = $('.saveBtn');
 
 
@@ -29,7 +29,7 @@ $(function () {
 
     timeBlock.each(function (i, row) {
 
-      let saidHour = parseInt($(this).attr("id"));
+      let saidHour = parseInt($(this).attr("id")); /* make saidHour equal to the id. instead of splitting hour off of the id I just made the id the integer alone */
 
       if (saidHour < currentHour) { /*if id time is equal to current time  = red*/
         $(this).addClass("past");
@@ -53,7 +53,7 @@ $(function () {
   let hour15 = $("#15");
   let hour16 = $("#16");
   let hour17 = $("#17");
-
+  // take local storage and set it to the value of the text area associated with the specific id
   hour9.children('textarea').val(localStorage.getItem("9"));
   hour10.children('textarea').val(localStorage.getItem("10"));
   hour11.children('textarea').val(localStorage.getItem("11"));
@@ -63,7 +63,7 @@ $(function () {
   hour15.children('textarea').val(localStorage.getItem("15"));
   hour16.children('textarea').val(localStorage.getItem("16"));
   hour17.children('textarea').val(localStorage.getItem("17"));
-  //
+  
   // TODO: Add code to display the current date in the header of the page.
   function displayDate() {
 

@@ -26,7 +26,7 @@ https://stackoverflow.com/questions/36420663/set-value-to-parents-parents-childs
 - W3schools.com
 
 ScreenShot:
-![ScreenShot]
+![ScreenShot](/assets/images/Screen%20Shot%202023-08-01%20at%2011.38.47%20AM.png)
 
 ## License
 
